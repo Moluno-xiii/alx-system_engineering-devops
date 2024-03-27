@@ -1,6 +1,6 @@
 #execute a command
 
 exec {'pkill':
-command => 'pkill killmenow',
+command  => 'pkill killmenow',
 provider => 'shell',
 }
