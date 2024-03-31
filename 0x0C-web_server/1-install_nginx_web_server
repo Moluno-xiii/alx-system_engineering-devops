@@ -10,6 +10,6 @@ sudo chmod -R 755 /var/www
 
 cp/var/www/html/index.nginx.debian.html /var/www/html/index/debian.html.bckp
 
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+echo -e 'Hello World!' | dd status=none of=/var/www/html/index.nginx-debian.html
 
 service nginx restart
